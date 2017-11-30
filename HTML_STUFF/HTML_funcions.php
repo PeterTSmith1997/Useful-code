@@ -15,7 +15,7 @@ function startHTMML($css, $pageName){
   
     <link href="$css" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
-    <title>$$pageName | SITE</title>
+    <title>$pageName | SITE</title>
 </head>
 START;
 
