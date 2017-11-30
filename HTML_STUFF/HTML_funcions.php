@@ -1,7 +1,11 @@
 <?php
 
+
 /**
- *
+ * makes a basic html page header
+ * @param $css link to css file.
+ * @param $pageName the name of your page
+ * @return string formatted html header
  */
 function startHTMML($css, $pageName){
     $html = <<< START
@@ -16,5 +20,12 @@ function startHTMML($css, $pageName){
 START;
 
     return $html;
+
+}
+
+/**
+ * @param $nav
+ */
+function navBar ($nav){
 
 }
