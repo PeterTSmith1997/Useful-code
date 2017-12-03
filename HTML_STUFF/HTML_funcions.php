@@ -27,8 +27,10 @@ START;
 
 }
 
+
 /**
- * @param $nav array of nav bar items
+ * @param $nav
+ * @return string
  */
 function makeNavBar ($nav){
     $navBar = <<< NAV
@@ -44,4 +46,16 @@ NAV;
 NAV2;
     return $navBar;
 
+}
+
+/**
+ * @param $options
+ */
+function dropDownBox ($options){
+    $dropDown = "<select>";
+    foreach ($options as $value=>$text){
+        $dropDown  .= "<option value='$value'> $text </option>";
+    }
+    $dropDown .= "</select>";
+    return $dropDown;
 }
