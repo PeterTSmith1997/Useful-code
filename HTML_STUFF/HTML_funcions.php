@@ -7,7 +7,7 @@
  * @param $pageName string the name of your page
  * @return string formatted html header
  */
-function startHTMML($css, $pageName){
+function startHTML($css, $pageName){
     $html = <<< START
     <!DOCTYPE html>
 <html lang="en">
