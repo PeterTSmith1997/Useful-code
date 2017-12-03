@@ -24,7 +24,7 @@ START;
 }
 
 /**
- * @param $nav
+ * @param $nav array of nav bar items
  */
 function makeNavBar ($nav){
     $navBar = <<< NAV
