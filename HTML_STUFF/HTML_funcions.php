@@ -3,8 +3,8 @@
 
 /**
  * makes a basic html page header
- * @param $css link to css file.
- * @param $pageName the name of your page
+ * @param $css string link to css file.
+ * @param $pageName string the name of your page
  * @return string formatted html header
  */
 function startHTMML($css, $pageName){
@@ -26,6 +26,18 @@ START;
 /**
  * @param $nav
  */
-function navBar ($nav){
+function makeNavBar ($nav){
+    $navBar = <<< NAV
+    <nav>
+        <ul>
+NAV;
+    foreach ($nav as $link=>$text){
+        $navBar .= "<li> <a href='$link'> $text </a></li>\n ";
+    }
+    $navBar .= <<< NAV2
+        </ul>
+    </nav>
+NAV2;
+    return $navBar;
 
 }
