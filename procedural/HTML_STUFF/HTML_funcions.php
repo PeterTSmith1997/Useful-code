@@ -50,12 +50,23 @@ NAV2;
 
 /**
  * @param $options
+ * @param  $selected
  */
-function dropDownBox ($options){
+function dropDownBox ($options, $selected = null){
     $dropDown = "<select>";
-    foreach ($options as $value=>$text){
-        $dropDown  .= "<option value='$value'> $text </option>";
+    foreach ($options as $value=>$text) {
+        if ($value == $selected) {
+            $dropDown .= "<option selected value ='$value'> $text</option>\n";
+        }
+        else{
+            $dropDown .= "\t \t<option value ='$value'> $text</option>\n";
+        }
     }
     $dropDown .= "</select>";
+
     return $dropDown;
+}
+
+function makeCheackbox(){
+
 }
