@@ -1,5 +1,9 @@
 <?php
-
+/**
+ * @author Petersweb
+ * @version 0.0.1 (03/11/17)
+ * @usage Use to aid wth a basic html site
+ */
 
 /**
  * makes a basic html page header
